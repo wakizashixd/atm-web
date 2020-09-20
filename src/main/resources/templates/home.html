@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}"
+      xmlns:th="https://www.thymeleaf.org">
+
+<div class="container" layout:fragment="content" >
+    <div class="jumbotron">
+        <h1 class="display-4 my-font" th:text="${greeting}"></h1>
+        <p class="lead">Hello, everyone.</p>
+        <p>How are you doing?</p>
+        Customer, Please <p><a th:href="@{/customer}">Register</a></p>
+    </div>
+</div>
+
